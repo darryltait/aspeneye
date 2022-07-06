@@ -1,0 +1,130 @@
+/*
+Theme Name: Aspen Eye
+Theme URI: https://www.aspeneyestudio.com
+Author: Darryl
+Author URI: https://www.darryltait.aspeneyestudio.com
+Description: A custom theme for Aspen Eye Studio
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: aspeneye
+
+
+*/
+
+/* aspen colors */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.service-box h3 {
+  color: rgb(107, 197, 112);
+}
+.aspenimage {
+  width: 100%;
+  height: auto;
+}
+.navbar {
+  background-color: rgb(210, 210, 99);
+  background-color: rgb(197, 131, 95);
+  background-color: rgb(178, 82, 81);
+  background-color: rgb(107, 197, 112);
+  background-color: rgb(58, 61, 70);
+}
+
+/* .dropdown-menu {
+  left: auto;
+  right: 0;
+} */
+.service-box:hover {
+  background-color: rgba(107, 197, 112, 0.15);
+}
+
+.and {
+  font-size: 150px;
+  margin: -35px 0 -20px;
+  color: rgb(107, 197, 112);
+}
+button.btn.btn-sm.contact.mb-4 {
+  background-color: rgb(107, 197, 112) !important;
+  color: white;
+}
+.bg-image {
+  overflow: hidden;
+}
+
+.bg-image img {
+  transition: all 5000ms ease;
+}
+.bg-image:hover img {
+  transform: scale(2);
+  transform: scale(1.25);
+  /* object-position: -125px 100px; */
+}
+
+.fade-in1 {
+  opacity: 0;
+  transition: opacity 1000ms ease-in 250ms;
+}
+.fade-in2 {
+  opacity: 0;
+  /* transition: opacity 1000ms ease-in 3000ms; */
+  transition: opacity 1000ms ease-in 1500ms;
+}
+.fade-in3 {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 500ms ease-in 3000ms;
+  transition: all 500ms ease-in 3000ms;
+}
+.fade-in4 {
+  opacity: 0;
+  transition: opacity 1000ms ease-in 4250ms;
+  transition: opacity 1000ms ease-in 4500ms;
+}
+.fade-in5 {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 8000ms ease-in 10000ms;
+}
+.fade-in1.appear,
+.fade-in2.appear,
+.fade-in3.appear,
+.fade-in4.appear,
+.fade-in5.appear {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .service-box {
+    margin-bottom: 25px;
+  }
+  h1.title {
+    margin: 20px 0 10px;
+  }
+}
+
+.title-bar {
+  height: 50px;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
